@@ -1,2 +1,4 @@
 CNAME
 .vscode
+node_modules/
+.next/
