@@ -5,8 +5,8 @@
 }
 
 :root {
-    --text-color: #333;
-    --link-color: #333;
+    --text-color: #111111;
+    --link-color: #111111;
     --link-hover-color: #0052a3;
     --bg-color: #ffffff;
     --border-color: #e0e0e0;
@@ -17,31 +17,39 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
-    padding: 0;
-    margin: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 48px 24px 80px;
 }
 
-.header {
-    margin-bottom: 60px;
+/* Top layout: name/links left, photo right */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .name {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 600;
-    margin-bottom: 20px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
 }
 
 .links {
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .links a {
@@ -57,111 +65,86 @@ body {
     text-decoration: underline;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.profile-section {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.profile-photo {
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    object-fit: cover;
+.top-right {
     flex-shrink: 0;
-    border: 2px solid var(--border-color);
 }
 
-.intro {
-    flex: 1;
+ .profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 1px solid var(--border-color);
 }
 
-.greeting {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.highlight {
-    font-weight: 500;
-}
-
-.experience-section {
+/* Main content text */
+.content {
     font-size: 1rem;
     line-height: 1.8;
 }
 
-.experience-section p {
+.content p {
     margin-bottom: 20px;
 }
 
-.experience-section p:last-child {
+.content p:last-child {
     margin-bottom: 0;
 }
 
-.experience-section strong {
+.content strong {
     font-weight: 500;
 }
 
-.contact-section {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-.contact-link {
-    color: var(--link-color);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.contact-link:hover {
+.content a {
     color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.content a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Greeting emphasis */
+.greeting {
+    font-size: 1.08rem;
+    font-weight: 400;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #0052a3; /* subtle accent */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .container {
-        padding: 30px 20px;
+        padding: 32px 20px 56px;
+    }
+
+    .top {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 24px;
     }
 
     .name {
-        font-size: 2rem;
-    }
-
-    .profile-section {
-        flex-direction: column;
-        gap: 20px;
+        font-size: 2.1rem;
     }
 
     .profile-photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .greeting {
-        font-size: 1rem;
-    }
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 1px solid var(--border-color);
 }
 
 @media (max-width: 480px) {
     .name {
-        font-size: 1.75rem;
-    }
-
-    .links {
-        gap: 16px;
+        font-size: 1.9rem;
     }
 
     .links a {
         font-size: 0.95rem;
     }
 }
-

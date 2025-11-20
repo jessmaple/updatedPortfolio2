@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio - Software Engineer">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio - Test Automation Engineer" />
     <title>Jessica Maple - Test Automation Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="name">Jessica Maple</h1>
-            <nav class="links">
-                <a href="https://linkedin.com/in/jessmaple" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/jessmaple" target="_blank" rel="noopener noreferrer">GitHub</a>
-               <!-- <a href="https://yourblog.com" target="_blank" rel="noopener noreferrer">Blog</a>  -->
-            </nav>
+        <!-- Header section with name + links on left, image on right -->
+        <header class="top">
+            <div class="top-left">
+                <h1 class="name">Jessica Maple</h1>
+                <nav class="links">
+                    <a href="https://linkedin.com/in/jessmaple" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/jessmaple" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </nav>
+            </div>
+
+            <div class="top-right">
+                <img src="profile.jpeg" alt="Jessica Maple" class="profile-photo" />
+            </div>
         </header>
 
-        <main class="main-content">
-            <img src="test.jpeg" alt="Profile Photo" class="profile-photo" id="profilePhoto">
-            <div class="profile-section">
-                <div class="intro">
-                    <p class="greeting">Hi, I'm <span class="highlight">Jessica</span>! I’m a Test Automation Engineer focused on ensuring reliable, high-quality software through strong testing strategy and automation.</p>
-                </div>
-            </div>
-            <div class="experience-section">
-                <p>I am currently a <strong>QA Engineer</strong> at <strong>AcariaHealth</strong>, where I help with frontend testing for ScriptMed’s cloud modernization</p>
-                <p>
-                Previously, I was a QA Engineer at the <strong>Centers for Disease Control and Prevention (CDC)</strong>, serving as the sole QA for 
-                <a href="https://www.cdc.gov/phin/php/phindir/index.html" target="_blank" rel="noopener noreferrer">PHIN DIR</a> and 
-                <a href="https://www.cdc.gov/phin/php/phinvads/index.html" target="_blank" rel="noopener noreferrer">PHIN VADS</a>, where I generated HL7 OIDs for Public Health entities, led an OID automation project, and supported QA, automated testing, and site reliability for the 
+        <!-- Main biography content -->
+        <main class="content">
+            <p class="greeting">
+                Hi, I'm <span class="highlight">Jessica</span>! I’m a Test Automation Engineer focused on ensuring reliable, high-quality software through strong testing strategy and automation.
+            </p>
+
+            <p>
+                I am currently a <strong>QA Engineer</strong> at <strong>AcariaHealth</strong>, where I help with
+                frontend testing for ScriptMed’s cloud modernization.
+            </p>
+
+            <p>
+                Previously, I was a QA Engineer at the <strong>Centers for Disease Control and Prevention (CDC)</strong>,
+                serving as the sole QA for
+                <a href="https://www.cdc.gov/phin/php/phindir/index.html" target="_blank" rel="noopener noreferrer">PHIN DIR</a>
+                and
+                <a href="https://www.cdc.gov/phin/php/phinvads/index.html" target="_blank" rel="noopener noreferrer">PHIN VADS</a>.
+                I generated HL7 OIDs for public health entities, led an OID automation project, and supported QA,
+                automated testing, and site reliability for the
                 <a href="https://phinvads.cdc.gov/vads/SearchVocab.action" target="_blank" rel="noopener noreferrer">PHIN VADS site</a>.
-                </p>
+            </p>
 
-                <p>I’m studying Computer Information Systems at <strong>Georgia State University</strong> and hold a Full-Stack Development Certificate from <strong>Georgia Tech</strong>.</p>
-            </div>
-
-           <!--div class="contact-section">
-                <p>Feel free to reach out to me <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="contact-link">@yourhandle</a>.</p>--> 
-            </div>
+            <p>
+                I’m studying Computer Information Systems at <strong>Georgia State University</strong> and hold a
+                Full-Stack Development Certificate from <strong>Georgia Tech</strong>.
+            </p>
         </main>
     </div>
 </body>
 </html>
-
