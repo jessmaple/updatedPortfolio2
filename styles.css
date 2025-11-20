@@ -6,7 +6,7 @@
 
 :root {
     --text-color: #333;
-    --link-color: #0066cc;
+    --link-color: #333;
     --link-hover-color: #0052a3;
     --bg-color: #ffffff;
     --border-color: #e0e0e0;
@@ -71,8 +71,8 @@ body {
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
