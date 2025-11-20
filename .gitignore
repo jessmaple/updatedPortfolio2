@@ -1,6 +1,8 @@
-CNAME
-.vscode
+.DS_Store
+*.log
 node_modules/
-.next/
-node_modules/
-.next/
+.vscode/
+*.swp
+*.swo
+*~
+
