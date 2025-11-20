@@ -37,7 +37,7 @@ body {
 .top-left {
     display: flex;
     flex-direction: column;
-    gap: 6px;  
+    gap: 1px;  
 }
 
 .name {
